@@ -57,7 +57,7 @@ const TestimonialFeedback = () => {
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
-    // Save to localStorage ,
+    // Save to localStorage
     const existingFeedbacks = JSON.parse(localStorage.getItem('webstrom_feedbacks') || '[]');
     const newFeedback = {
       ...data,
