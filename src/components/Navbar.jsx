@@ -21,7 +21,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link to="/" onClick={handleLinkClick} className="flex items-center gap-2">
         <img className="h-12 md:h-14" src={Logo} alt="Logo" />
-        <h1 className="text-xl md:text-2xl font-bold text-gray-800">WEBSTROM</h1>
+        <h1 className="text-xl md:text-2xl font-bold text-gray-800">Webstrom Tech</h1>
       </Link>
 
       {/* Mobile Menu Button */}

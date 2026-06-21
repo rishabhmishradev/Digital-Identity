@@ -71,7 +71,7 @@ const Footer = () => {
         variants={fadeUp}
         custom={5}
       >
-        <p>© {new Date().getFullYear()} Webstrom. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Webstrom Tech. All rights reserved.</p>
         <ul className="flex gap-4 mt-3 md:mt-0">
           <button
               onClick={() => {
