@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion'; // 👈 Import motion
+import SEO from '../components/SEO';
 
 const Pricing = () => {
   return (
+    <>
+    <SEO title="Pricing & Plans" description="Affordable and customized web development pricing plans. From basic portfolios to custom SaaS platforms." />
     <motion.div
       className="flex flex-wrap items-center justify-center gap-6 py-12 px-4"
       initial={{ opacity: 0 }}
@@ -60,6 +63,7 @@ const Pricing = () => {
         buttonText="Schedule a call"
       />
     </motion.div>
+    </>
   );
 };
 

@@ -3,9 +3,10 @@ import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Star, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Star, CheckCircle, Send, AlertCircle, MessageSquare, Phone, Mail } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import SEO from '../components/SEO';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -76,9 +77,18 @@ const TestimonialFeedback = () => {
     'Mobile App Development',
     'AI Automation',
     'Business Email Setup',
+    'Dedicated Tech Partnership',
+    'Product Maintenance and Scaling',
+    'IT Outsourcing Services',
+    'AI and Automation Solution',
+    'Mobile and Web Application',
+    'Custom Software Development',
+    'Startup MVP Development',
   ];
 
   return (
+    <>
+    <SEO title="Submit Feedback" description="Submit your valuable feedback for Webstrom Tech. Help us improve our web development and digital solutions." />
     <div className="min-h-screen bg-white text-gray-900 py-12 px-4 sm:px-6 lg:px-8 font-sans selection:bg-[#ff5a1f]/30">
       <div className="max-w-3xl mx-auto pt-16">
         <motion.div
@@ -397,6 +407,7 @@ const TestimonialFeedback = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };
 

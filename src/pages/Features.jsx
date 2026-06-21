@@ -1,27 +1,48 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SEO from "../components/SEO";
 
 const features = [
   {
-    title: "Custom Portfolio Design",
-    desc: "Tailored portfolios that match your style, goals, and profession.",
+    title: "Custom Web & Portfolio Design",
+    desc: "Tailored portfolios and websites that match your brand, goals, and profession.",
     icon: "🎨",
   },
   {
-    title: "Mobile & SEO Optimized",
-    desc: "Fast, responsive, and discoverable on search engines like Google.",
+    title: "Mobile & Web Applications",
+    desc: "Fast, scalable, and responsive apps tailored for your business needs.",
     icon: "📱",
   },
   {
-    title: "One-Click Sharing",
-    desc: "Share via link, QR code, or digital card in seconds.",
-    icon: "🔗",
+    title: "Startup MVP Development",
+    desc: "Rapidly build and launch your Minimum Viable Product to test and scale.",
+    icon: "🚀",
   },
-  { title: "Coming Soon" },
-  { title: "Coming Soon" },
-  { title: "Coming Soon" },
-  { title: "Coming Soon" },
-  { title: "Coming Soon" },
+  {
+    title: "AI & Automation Solutions",
+    desc: "Streamline workflows and enhance capabilities with intelligent AI integrations.",
+    icon: "🤖",
+  },
+  {
+    title: "Dedicated Tech Partnership",
+    desc: "Act as your dedicated technical partner for long-term growth and success.",
+    icon: "🤝",
+  },
+  {
+    title: "Custom Software & IT Outsourcing",
+    desc: "Comprehensive IT outsourcing and tailored software development services.",
+    icon: "💻",
+  },
+  {
+    title: "Product Maintenance & Scaling",
+    desc: "Continuous support to maintain, optimize, and scale your digital products.",
+    icon: "📈",
+  },
+  {
+    title: "SEO & Digital Marketing",
+    desc: "Boost your visibility and reach with data-driven SEO and marketing strategies.",
+    icon: "🎯",
+  },
 ];
 
 const cardVariants = {
@@ -39,6 +60,8 @@ const cardVariants = {
 
 const Features = () => {
   return (
+    <>
+    <SEO title="Key Features" description="Custom Portfolio Design, Mobile & SEO Optimized, One-Click Sharing. Discover the key features we offer at Webstrom Tech." />
     <motion.div
       initial={{ opacity: 0, y: 20 }}       // starting
       animate={{ opacity: 1, y: 0 }}        // after mount
@@ -78,6 +101,7 @@ const Features = () => {
       </div>
     </section>
    </motion.div>
+   </>
   );
 };
 

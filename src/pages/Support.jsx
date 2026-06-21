@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import SEO from "../components/SEO";
 
 const Support = () => {
   const form = useRef();
@@ -25,6 +26,8 @@ const Support = () => {
   };
 
   return (
+    <>
+    <SEO title="Support & Contact" description="Get in touch with Webstrom Tech. Contact us for custom web development, SaaS platforms, AI automation, and digital solutions." />
     <motion.div
       className="py-12 flex justify-center items-center px-4"
       initial={{ opacity: 0, scale: 0.95 }}
@@ -113,6 +116,7 @@ const Support = () => {
         </div>
       </form>
     </motion.div>
+    </>
   );
 };
 

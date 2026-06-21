@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 
 const HomePage = () => {
   return (
+    <>
+    <SEO title="Digital Identity Agency" description="Unlock potential with tailored strategies designed for success. Simplify challenges, maximize results with Webstrom Tech." />
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -105,6 +108,7 @@ const HomePage = () => {
         </div>
       </main>
     </motion.div>
+    </>
   );
 };
 

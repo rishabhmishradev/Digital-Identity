@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+import SEO from "../components/SEO";
 
 const catalogueItems = [
   {
@@ -47,6 +48,8 @@ const cardVariants = {
 
 const CataloguePage = () => {
   return (
+    <>
+    <SEO title="Our Catalogue" description="Explore our portfolio of custom websites, e-commerce stores, and SaaS landing pages built by Webstrom Tech." />
     <motion.div
       initial={{ opacity: 0, y: 20 }}       // starting
       animate={{ opacity: 1, y: 0 }}        // after mount
@@ -103,6 +106,7 @@ const CataloguePage = () => {
       </div>
     </section>
    </motion.div>
+   </>
   );
 };
 

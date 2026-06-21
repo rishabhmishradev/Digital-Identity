@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Star, MessageSquareQuote, Calendar, User, Activity } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import SEO from '../components/SEO';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -55,6 +56,8 @@ const Feedbacks = () => {
   };
 
   return (
+    <>
+    <SEO title="Client Feedbacks" description="Read what our clients say about our web development, AI automation, and custom software services." />
     <div className="min-h-screen bg-white text-gray-900 py-12 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="max-w-7xl mx-auto pt-16">
         <div className="text-center mb-12 relative">
@@ -159,6 +162,7 @@ const Feedbacks = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 
