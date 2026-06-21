@@ -56,16 +56,16 @@ const TestimonialFeedback = () => {
     console.log(data);
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    // Save to localStorage
+
+    // Save to localStorage ,
     const existingFeedbacks = JSON.parse(localStorage.getItem('webstrom_feedbacks') || '[]');
-    const newFeedback = { 
-      ...data, 
-      id: Date.now(), 
-      createdAt: new Date().toISOString() 
+    const newFeedback = {
+      ...data,
+      id: Date.now(),
+      createdAt: new Date().toISOString()
     };
     localStorage.setItem('webstrom_feedbacks', JSON.stringify([newFeedback, ...existingFeedbacks]));
-    
+
     setIsSubmitted(true);
   };
 
@@ -88,7 +88,7 @@ const TestimonialFeedback = () => {
         >
           {/* Accent glow */}
           <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-[#ff5a1f]/20 rounded-full blur-3xl opacity-50 pointer-events-none" />
-          
+
           <div className="relative z-10">
             <div className="text-center mb-10">
               <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 mb-3">
